@@ -1,12 +1,14 @@
 import AppRouter from './AppRouter'
 import Layout from './components/layout'
-
+import { ThemeProvider } from './contexts/theme-provider'
 
 function App() {
   return (
-    <Layout>
-      <AppRouter />
-    </Layout>
+    <ThemeProvider>
+      <Layout>
+        <AppRouter />
+      </Layout>
+    </ThemeProvider>
   )
 }
 
