@@ -13,7 +13,7 @@ const STATUS_NORMALIZATION: Record<string, OrderStatus> = {
   review: 'review',
 }
 
-export const OrderDomain = {
+export const OrderFactory = {
   normalizeStatus(status: string | undefined): OrderStatus {
     if (!status) {
       return 'pending'
@@ -136,4 +136,4 @@ export const OrderDomain = {
   },
 } as const
 
-export const { normalizeStatus, isFilled, getTypeLabel, createOrderFromPayload, buildCreatePayload, buildUpdatePayload, createFill } = OrderDomain
+export const { normalizeStatus, isFilled, getTypeLabel, createOrderFromPayload, buildCreatePayload, buildUpdatePayload, createFill } = OrderFactory

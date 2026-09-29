@@ -1,15 +1,13 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
 
-import Home from './pages/Home'
-import About from './pages/About'
-import Trading from './pages/Trading'
+import { appRoutes } from './routes'
 
 export default function AppRouter() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/trading" element={<Trading />} />
+      {appRoutes.map((route) => (
+        <Route key={route.path} path={route.path} element={route.element} />
+      ))}
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   )

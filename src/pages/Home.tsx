@@ -13,6 +13,7 @@ export default function Home() {
             <Link className="rounded-lg px-3 py-2 text-slate-700 hover:bg-slate-100" to="/">Home</Link>
             <Link className="rounded-lg px-3 py-2 text-slate-700 hover:bg-slate-100" to="/about">About</Link>
             <Link className="rounded-lg px-3 py-2 text-slate-700 hover:bg-slate-100" to="/trading">Trading</Link>
+            <Link className="rounded-lg px-3 py-2 text-slate-700 hover:bg-slate-100" to="/hooks-practice">Hooks</Link>
           </nav>
         </header>
 

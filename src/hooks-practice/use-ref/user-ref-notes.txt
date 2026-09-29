@@ -1,0 +1,13 @@
+useRef: (https://react.dev/reference/react/hooks)
+Refs let a component hold some information that isn’t used for rendering, 
+like a DOM node or a timeout ID. Unlike with state, updating a ref does not 
+re-render your component. Refs are an “escape hatch” from the React paradigm. 
+They are useful when you need to work with non-React systems, such as the 
+built-in browser APIs.
+
+Mit Refs kann man Informationen speichern, die nicht für das Renden verwendet werden. 
+Zum Beispiel ein DOM knoten oder eine Timeout-ID. Im Gegensatz zum State führt das Aktulaiseirung ein Ref nicht 
+das erneuten Rendern aus. Refs sind Auswege aus dem React-Paradigma. Sie sind nützlich, wenn man mit nicht-React-Systemen arbeiten muss, 
+wie den eingebauten Browser-APIs.
+
+Zu weitern Informationen siehe die Code Beispiele unten pages
