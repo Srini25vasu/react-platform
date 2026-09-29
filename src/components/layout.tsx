@@ -1,20 +1,19 @@
-import type { ReactNode } from 'react'
-
-import Footer from './footer'
-import Header from './header'
+import type { ReactNode } from "react";
+import Header from "./header";
+import Footer from "./footer";
 
 interface LayoutProps {
-  children: ReactNode
+  readonly children: ReactNode;
 }
 
-function Layout({ children }: LayoutProps) {
+function Layout({children}: LayoutProps) {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div>
       <Header />
-      <main className="mx-auto w-full max-w-6xl flex-1 px-4 py-6">{children}</main>
+      <main>{children}</main>
       <Footer />
     </div>
-  )
+  );
 }
 
-export default Layout
+export default Layout;
